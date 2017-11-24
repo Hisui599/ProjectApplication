@@ -27,22 +27,25 @@
             android:background="@color/colorPrimaryDark">
 
             <android.support.design.widget.TabItem
-                android:id="@+id/tasks"
+                android:id="@+id/peopleTab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Left" />
+                android:text="@string/people" />
 
             <android.support.design.widget.TabItem
-                android:id="@+id/people"
+                android:id="@+id/tasksTab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Center" />
+                android:text="@string/tasks" />
 
         </android.support.design.widget.TabLayout>
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_main" />
+    <include
+        layout="@layout/content_main"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="444dp" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"

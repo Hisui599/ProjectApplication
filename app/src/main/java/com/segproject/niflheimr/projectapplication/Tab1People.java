@@ -14,7 +14,7 @@ import android.view.ViewGroup;
 public class Tab1People extends Fragment{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.tab1People, container, false);
+        View rootView = inflater.inflate(R.layout.tab1people, container, false);
 
         return rootView;
     }

@@ -14,7 +14,7 @@ import android.view.ViewGroup;
 public class Tab2Tasks extends Fragment{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.tab2Tasks, container, false);
+        View rootView = inflater.inflate(R.layout.tab2tasks, container, false);
 
         return rootView;
     }

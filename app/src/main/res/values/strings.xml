@@ -13,4 +13,7 @@
     <string name="tab_text_3">Tab 3</string>
     <string name="people">People</string>
     <string name="tasks">Tasks</string>
+    <string name="title_activity_user_chores">user_chores</string>
+    <string name="choreName">Chore Name</string>
+    <string name="deadLine">Dead Line</string>
 </resources>

@@ -2,22 +2,21 @@ package com.segproject.niflheimr.projectapplication;
 
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.sql.Date;
 
-public class user_chores extends AppCompatActivity {
+public class TaskList extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.tab2tasks);
+        setContentView(R.layout.activity_task_list);
 
-        //use SQL to return list of chores
         String[] choreList = {"Walk Dog", "Do the Dishes"};
         Date[] deadLine = {new Date(2017,01,01),new Date(2017,01,01)};
         String[] assignedTo = {"lala","nannan"};
@@ -34,7 +33,5 @@ public class user_chores extends AppCompatActivity {
                 //some SQL to return the task information based on choreId.
             }
         });
-
     }
-
 }

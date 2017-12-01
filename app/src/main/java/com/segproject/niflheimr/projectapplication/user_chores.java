@@ -15,7 +15,7 @@ public class user_chores extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.tab2tasks);
+        setContentView(R.layout.tasks_fragment);
 
         //use SQL to return list of chores
         String[] choreList = {"Walk Dog", "Do the Dishes"};

@@ -2,30 +2,26 @@ package com.segproject.niflheimr.projectapplication;
 
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.sql.Date;
 
-public class user_chores extends AppCompatActivity {
+public class User_list extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.tasks_fragment);
-
-        //use SQL to return list of chores
-        String[] choreList = {"Walk Dog", "Do the Dishes"};
-        Date[] deadLine = {new Date(2017,01,01),new Date(2017,01,01)};
-        String[] assignedTo = {"lala","nannan"};
+        setContentView(R.layout.activity_user_layout);
+        String[] userList = {"YueHanNi", "Xiao Li", "Xiao Dot"};
         Resources res = getResources();
-        Drawable[] choreIcon = {res.getDrawable(R.drawable.vacuum),res.getDrawable(R.drawable.vacuum)};
-        ListView listView = (ListView)findViewById(R.id.userChoreList);
+        Drawable[] userIcon = {res.getDrawable(R.drawable.vacuum), res.getDrawable(R.drawable.vacuum)};
+        ListView listView = (ListView) findViewById(R.id.userList);
 
-        ChoreCustomAdapter adapter = new ChoreCustomAdapter(this, choreList,deadLine,assignedTo, choreIcon);
+        UserCustomAdapter adapter = new UserCustomAdapter(this, userList, userIcon);
         listView.setAdapter(adapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -34,7 +30,5 @@ public class user_chores extends AppCompatActivity {
                 //some SQL to return the task information based on choreId.
             }
         });
-
     }
-
 }

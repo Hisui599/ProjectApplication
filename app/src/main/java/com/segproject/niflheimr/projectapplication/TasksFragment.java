@@ -11,10 +11,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-public class Tab2Tasks extends Fragment{
+public class TasksFragment extends Fragment{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.tab2tasks, container, false);
+        View rootView = inflater.inflate(R.layout.tasks_fragment, container, false);
 
         return rootView;
     }

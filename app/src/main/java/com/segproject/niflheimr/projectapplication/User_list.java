@@ -8,17 +8,15 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import java.sql.Date;
-
 public class User_list extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_layout);
+        setContentView(R.layout.activity_user_list);
         String[] userList = {"YueHanNi", "Xiao Li", "Xiao Dot"};
         Resources res = getResources();
-        Drawable[] userIcon = {res.getDrawable(R.drawable.vacuum), res.getDrawable(R.drawable.vacuum)};
+        Drawable[] userIcon = {res.getDrawable(R.drawable.vacuum), res.getDrawable(R.drawable.vacuum),res.getDrawable(R.drawable.vacuum)};
         ListView listView = (ListView) findViewById(R.id.userList);
 
         UserCustomAdapter adapter = new UserCustomAdapter(this, userList, userIcon);

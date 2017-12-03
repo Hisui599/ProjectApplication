@@ -22,7 +22,7 @@ public class TaskList extends AppCompatActivity {
         String[] assignedTo = {"lala","nannan"};
         Resources res = getResources();
         Drawable[] choreIcon = {res.getDrawable(R.drawable.vacuum),res.getDrawable(R.drawable.vacuum)};
-        ListView listView = (ListView)findViewById(R.id.userChoreList);
+        ListView listView = (ListView)findViewById(R.id.taskList);
 
         ChoreCustomAdapter adapter = new ChoreCustomAdapter(this, choreList,deadLine,assignedTo, choreIcon);
         listView.setAdapter(adapter);

@@ -45,16 +45,16 @@
             android:text="view people list" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/createGroup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="create Group" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/createTask"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="Create Task" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

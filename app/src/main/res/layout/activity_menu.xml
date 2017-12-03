@@ -22,18 +22,21 @@
             android:id="@+id/Personal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="OnPersonalInfo"
             android:text="Personal Info" />
 
         <Button
             android:id="@+id/TaskList"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="OnTaskList"
             android:text="View Task list" />
 
         <Button
             android:id="@+id/peoplelist"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="OnPeopleList"
             android:text="view people list" />
     </LinearLayout>
 

@@ -23,7 +23,8 @@
             android:name=".user_chores"
             android:label="@string/title_activity_user_chores"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".TaskList"></activity>
+        <activity android:name=".TaskList" />
+        <activity android:name=".User_list"></activity>
     </application>
 
 </manifest>

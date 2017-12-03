@@ -6,6 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 
 public class Register extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_register);
+    }
+
     public void FinishRegistration(View view) {
         //Need Implement logic
         Intent intent = new Intent(getApplicationContext(), Tab2Tasks.class);
@@ -16,11 +23,4 @@ public class Register extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), ProfileActivity.class);
         startActivityForResult (intent,0);
     }
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
-    }
-
-
 }

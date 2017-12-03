@@ -15,7 +15,7 @@ public class Register extends AppCompatActivity {
 
     public void FinishRegistration(View view) {
         //Need Implement logic
-        Intent intent = new Intent(getApplicationContext(), Tab2Tasks.class);
+        Intent intent = new Intent(getApplicationContext(), TasksFragment.class);
         startActivityForResult (intent,0);
     }
     public void OnSetAvatarButton(View view) {

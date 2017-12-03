@@ -292,7 +292,7 @@ public class SigninActivity extends AppCompatActivity implements LoaderCallbacks
     }
     public void Login(View view) {
         //Application Context and Activity
-        Intent intent = new Intent(getApplicationContext(), Tab2Tasks.class);
+        Intent intent = new Intent(getApplicationContext(), TasksFragment.class);
         startActivityForResult (intent,0);
     }
     /**

@@ -25,6 +25,14 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".TaskList" />
         <activity android:name=".User_list" />
+        <activity android:name=".Menu" />
+        <activity android:name=".Login2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".Menu"></activity>
     </application>
 

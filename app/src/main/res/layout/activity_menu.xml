@@ -48,12 +48,14 @@
             android:id="@+id/createGroup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="OnCreateGroup"
             android:text="create Group" />
 
         <Button
             android:id="@+id/createTask"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="OnCreateTask"
             android:text="Create Task" />
     </LinearLayout>
 

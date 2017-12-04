@@ -5,6 +5,7 @@ import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -40,6 +41,22 @@ import static android.Manifest.permission.READ_CONTACTS;
  */
 public class Login2 extends AppCompatActivity  {
 
+
+    private AutoCompleteTextView email;
+    private EditText password;
+    private Button signin;
+    private Button register;
+    private String emailString ="";
+    private String passwordString ="";
+    private TextView showUser;
+    private TextView showRward;
+    private TextView showpPhoto;
+    private TextView showpass;
+    private TextView showgroup;
+
+
+
+
     /**
      * Id to identity READ_CONTACTS permission request.
      *
@@ -48,15 +65,51 @@ public class Login2 extends AppCompatActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login2);
+
+        email = (AutoCompleteTextView)findViewById(R.id.email);
+        password = (EditText)findViewById(R.id.password);
+
+        signin = (Button)findViewById(R.id.sign_in_button);
+        register = (Button)findViewById(R.id.register_button);
+        showUser= (TextView)findViewById(R.id.showUserName);
+        showRward= (TextView)findViewById(R.id.showReward);
+        showpPhoto= (TextView)findViewById(R.id.showPhoto);
+        showpass= (TextView)findViewById(R.id.showPassword);
+        showgroup= (TextView)findViewById(R.id.showGroup);
     }
 
     public void OnMenu(View view) {
-//Application Context and Activity
-        Intent intent = new Intent(this, Menu.class);
-        startActivityForResult (intent,0);
+        MydbHandler dbHandler = new MydbHandler(this);
+
+        User user = dbHandler.findUser(email.getText().toString());
+
+
+        if (user != null){
+            if (user.getPassword().equals(password.getText().toString())) {
+                Intent intent = new Intent(getApplicationContext(), Menu.class);
+                startActivityForResult(intent, 0);
+
+            }
+
+        }
     }
+        /***
+        signin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                emailString = email.getText().toString();
+                passwordString = password.getText().toString();
+        ***/
+
+
+
+
+
+//Application Context and Activity
+
 
     public void OnRegister(View view) {
+
 //Application Context and Activity
         Intent intent = new Intent(getApplicationContext(), Register.class);
         startActivityForResult (intent,0);

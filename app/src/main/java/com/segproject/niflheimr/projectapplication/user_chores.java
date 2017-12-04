@@ -19,7 +19,7 @@ public class user_chores extends AppCompatActivity {
 
         //use SQL to return list of chores
         String[] choreList = {"Walk Dog", "Do the Dishes"};
-        Date[] deadLine = {new Date(2017,01,01),new Date(2017,01,01)};
+        Date[] deadLine = {new Date( 2017,01,01),new Date(2017,01,01)};
         String[] assignedTo = {"lala","nannan"};
         Resources res = getResources();
         Drawable[] choreIcon = {res.getDrawable(R.drawable.vacuum),res.getDrawable(R.drawable.vacuum)};

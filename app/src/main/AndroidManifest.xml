@@ -20,8 +20,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Menu"></activity>
-        <activity android:name=".Register"></activity>
+        <activity android:name=".Menu" />
+        <activity android:name=".Register" />
         <activity android:name=".TaskList" />
         <activity android:name=".User_list" />
         <activity android:name=".TasksFragment" />
@@ -29,6 +29,7 @@
         <activity android:name=".Resource_chores" />
         <activity android:name=".CreateGroupActivity" />
         <activity android:name=".CreateTaskActivity" />
+        <activity android:name=".TaskEditor"></activity>
     </application>
 
 </manifest>

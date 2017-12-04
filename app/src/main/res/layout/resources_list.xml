@@ -4,10 +4,10 @@
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.segproject.niflheimr.projectapplication.MainActivity">
+    tools:context="com.segproject.niflheimr.projectapplication.ResourcesList">
 
     <ListView
-        android:id="@+id/resourceList"
+        android:id="@+id/ResourceList"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </android.support.constraint.ConstraintLayout>

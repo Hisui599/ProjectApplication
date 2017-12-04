@@ -15,7 +15,7 @@ public class Register extends AppCompatActivity {
 
     public void FinishRegistration(View view) {
         //Need Implement logic
-        Intent intent = new Intent(getApplicationContext(), TasksFragment.class);
+        Intent intent = new Intent(getApplicationContext(), Menu.class);
         startActivityForResult (intent,0);
     }
 

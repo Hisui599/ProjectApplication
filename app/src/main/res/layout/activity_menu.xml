@@ -57,6 +57,13 @@
             android:layout_height="wrap_content"
             android:onClick="OnCreateTask"
             android:text="Create Task" />
+
+        <Button
+            android:id="@+id/viewResource"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="OnResource"
+            android:text="Resource" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

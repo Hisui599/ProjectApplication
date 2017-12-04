@@ -25,6 +25,8 @@
         <activity android:name=".TaskList" />
         <activity android:name=".User_list" />
         <activity android:name=".TasksFragment" />
+        <activity android:name=".ResourcesList" />
+        <activity android:name=".Resource_chores" />
         <activity android:name=".CreateGroupActivity" />
         <activity android:name=".CreateTaskActivity" />
     </application>

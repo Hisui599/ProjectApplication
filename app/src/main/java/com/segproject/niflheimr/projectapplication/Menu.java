@@ -37,6 +37,11 @@ public class Menu extends AppCompatActivity {
         startActivityForResult(intent, 0);
     }
 
+    public void OnResource(View view){
+        Intent intent = new Intent(getApplicationContext(), ResourcesList.class);
+        startActivityForResult(intent, 0);
+    }
+
     public void OnCreateTask(View view){
         Intent intent = new Intent(getApplicationContext(), CreateTaskActivity.class);
         startActivityForResult(intent, 0);

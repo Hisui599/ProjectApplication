@@ -41,6 +41,9 @@ public class Register extends AppCompatActivity {
     public void OnSetAvatarButton(View view) {
 //Application Context and Activity
         Intent intent = new Intent(getApplicationContext(), ProfileActivity.class);
+        //Need Implement logic
+        Intent intent = new Intent(getApplicationContext(), Menu.class);
         startActivityForResult (intent,0);
     }
+
 }

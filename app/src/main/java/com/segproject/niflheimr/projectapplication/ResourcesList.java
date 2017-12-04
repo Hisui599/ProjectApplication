@@ -8,18 +8,23 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-public class User_list extends AppCompatActivity {
+import java.sql.Date;
+
+public class ResourcesList extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_list);
-        String[] userList = {"YueHanNi", "Xiao Li", "Xiao Dot"};
-        Resources res = getResources();
-        Drawable[] userIcon = {res.getDrawable(R.drawable.vacuum), res.getDrawable(R.drawable.vacuum),res.getDrawable(R.drawable.vacuum)};
-        ListView listView = (ListView) findViewById(R.id.userList);
+        setContentView(R.layout.resources_list);
 
-        UserCustomAdapter adapter = new UserCustomAdapter(this, userList, userIcon);
+        String[] itemName = {"bucket", "soap"};
+        Integer[] avalible = {1, 2};
+        Integer[] Total = {3, 3};
+        Resources res = getResources();
+        Drawable[] ItemIcon = {res.getDrawable(R.drawable.ic_menu_manage), res.getDrawable(R.drawable.ic_menu_manage)};
+        ListView listView = (ListView) findViewById(R.id.ResourceList);
+
+        ResourceCustomAdapter adapter = new ResourceCustomAdapter(this, itemName,avalible,Total, ItemIcon);
         listView.setAdapter(adapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -30,3 +35,4 @@ public class User_list extends AppCompatActivity {
         });
     }
 }
+

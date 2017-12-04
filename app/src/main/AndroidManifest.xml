@@ -13,8 +13,6 @@
             android:name=".user_chores"
             android:label="@string/title_activity_user_chores"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".TaskList" />
-        <activity android:name=".User_list" />
         <activity android:name=".Login2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,7 +22,13 @@
         </activity>
         <activity android:name=".Menu"></activity>
         <activity android:name=".Register"></activity>
-
+        <activity android:name=".TaskList" />
+        <activity android:name=".User_list" />
+        <activity android:name=".TasksFragment" />
+        <activity android:name=".ResourcesList" />
+        <activity android:name=".Resource_chores" />
+        <activity android:name=".CreateGroupActivity" />
+        <activity android:name=".CreateTaskActivity" />
     </application>
 
 </manifest>

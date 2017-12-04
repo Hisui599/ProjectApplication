@@ -21,7 +21,7 @@ public class ResourcesList extends AppCompatActivity {
         Integer[] avalible = {1, 2};
         Integer[] Total = {3, 3};
         Resources res = getResources();
-        Drawable[] ItemIcon = {res.getDrawable(R.drawable.ic_menu_manage), res.getDrawable(R.drawable.ic_menu_manage)};
+        Drawable[] ItemIcon = {res.getDrawable(R.drawable.vacuum), res.getDrawable(R.drawable.vacuum)};
         ListView listView = (ListView) findViewById(R.id.ResourceList);
 
         ResourceCustomAdapter adapter = new ResourceCustomAdapter(this, itemName,avalible,Total, ItemIcon);
